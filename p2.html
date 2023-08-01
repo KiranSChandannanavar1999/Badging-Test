@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Layout</title>
+    <style>
+    .container{
+      display: flex;
+    }
+        #card1{
+            width: 300px;
+            background-color: blue;
+            height: 700px;
+            position: fixed;
+        }
+        #card1>p{
+            margin-top: 400px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #card2{
+            background-color: red;
+           width:1100px;
+           height: 700px;
+           margin-left: 300px;
+        }
+        #img-container{
+            width: 1100px;
+            height: 700px;
+        }
+        #card2>p{
+            margin-top: -300px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <section class="container">
+        <div id="card1">
+            <p>This is Complex Layout 1</p>
+        </div>
+        <div id="card2">
+            <img id="img-container" src="assets/images/vista1.jpg" alt="">
+            <p>This is Complex Layout 2</p>
+        </div>
+    </section>
+    </center>
+</body>
+</html>
